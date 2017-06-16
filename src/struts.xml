@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="default" extends="struts-default, json-default">
+		<action name="houseHolders" class="action.DashboardAction">
+			<result name="sucess">/pages/householder.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="savehousedetail" class="action.savehousedetailAction">
+			<result name="sucess">/pages/householder.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+		
+				<action name="getRoadNameList" class="action.savehousedetailAction" method="getRoadNameList">
+			<result name="sucess">/pages/householder.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="familydetail" class="action.familydetailAction">
+			<result name="sucess">/pages/householder.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="persondetail" class="action.persondetailAction">
+			<result name="sucess">/pages/householder.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="addsocieties" class="action.addsocietiesAction">
+			<result name="sucess">/pages/add_social_organizations.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="saveaddsocieties" class="action.saveaddsocietiesAction">
+			<result name="sucess">/pages/add_social_organizations.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="savememberoforg" class="action.savememberoforgAction">
+			<result name="sucess">/pages/add_social_organizations.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="lists" class="action.getListAction">
+			<result name="sucess">/pages/add_social_organizations.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="table" class="action.viewTableAction">
+			<result name="sucess">/pages/indextemp.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="addgramadata" class="action.addgramadataAction">
+			<result name="sucess">/pages/add_grama_data.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="addgramapersondata" class="action.addgramapersondataAction">
+			<result name="sucess">/pages/add_grama_person_data.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="editgramapersondata" class="action.editgramapersondataAction">
+			<result name="sucess">/pages/edit_grama_person_data.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="changedetails" class="action.changedetailsAction">
+			<result name="sucess">/pages/ChangeDetails.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="getpersondetails" class="action.getpsrsondetailsAction">
+			<result name="sucess">/pages/ChangeDetails.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="loadPersonDetails" class="action.loadPersonDetailsAction">
+			<result name="sucess">/pages/indextemp.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+
+		<action name="editHomeDetails" class="action.editHomeDetailsAction">
+			<result name="sucess">/pages/householder.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+		<action name="updatehousedetail" class="action.updatehousedetailAction">
+			<result name="sucess">/pages/householder.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+		<action name="getPersonDetailsByID" class="action.persondetailAction" method="getPersonDetailsByID">
+			<result name="sucess">/pages/indextemp.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+		
+				<action name="saveGramaPersonData" class="action.persondetailAction" method="saveGramaPersonData">
+			<result name="sucess">/pages/add_grama_person_data.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+		
+				<action name="updatepersontails" class="action.getpsrsondetailsAction" method="updatepersontails">
+			<result name="sucess">/pages/ChangeDetails.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+				<action name="updatefamilydetails" class="action.familydetailAction" method="updatefamilydetails">
+			<result name="sucess">/pages/ChangeDetails.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+						<action name="livingcertificate" class="action.certificate" method="livingcertificate">
+			<result name="sucess">/pages/livinngcertificate.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+								<action name="livingofcertificat" class="action.certificate" method="livingofcertificat">
+			<result name="sucess">/pages/livinngcertificate.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+		
+										<action name="areacertificate" class="action.certificate" method="areacertificate">
+			<result name="sucess">/pages/areacertificate.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+		
+												<action name="areacertificateload" class="action.certificate" method="areacertificateload">
+			<result name="sucess">/pages/areacertificate.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+										<action name="areacertificatpdf" class="action.certificate" method="areacertificatpdf">
+			<result name="sucess">/pages/areacertificate.jsp</result>
+			<result name="error">/error.jsp</result>
+			<!-- Main Person Details include House/Famelly/Members -->
+		</action>
+	</package>
+</struts>
